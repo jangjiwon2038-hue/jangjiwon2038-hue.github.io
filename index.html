@@ -16,7 +16,6 @@
       .nav-links { display: flex; gap: 4px; }
       .nav-links a { min-height: 32px; padding: 8px 16px; border-radius: 4px; font-weight: 500; transition: color .33s, background-color .33s; }
       .nav-links a:hover { background: rgba(23, 26, 32, .06); }
-      .nav-contact { color: var(--pewter); }
       .hero { position: relative; display: grid; min-height: 100vh; place-items: center; overflow: hidden; color: var(--white); text-align: center; background: #171a20 url("assets/seoul-hero.png") center / cover no-repeat; }
       .hero::before { position: absolute; inset: 0; content: ""; background: rgba(23, 26, 32, .33); }
       .hero-content { position: relative; z-index: 1; display: flex; width: min(100% - 32px, 680px); flex-direction: column; align-items: center; padding-top: 56px; }
@@ -46,30 +45,20 @@
       .interest:last-child { background-color: #393c41; }
       .interest p { margin: 0; font-size: 16px; font-weight: 500; }
       .interest span { display: block; margin-top: 8px; color: rgba(255, 255, 255, .8); line-height: 1.43; }
-      .contact-section { min-height: 62vh; text-align: center; }
-      .contact-section .section-inner { display: flex; flex-direction: column; align-items: center; }
-      .phone { margin-top: 24px; color: var(--blue); font-size: 22px; font-weight: 500; }
-      .chat-bar { position: fixed; z-index: 9; right: 16px; bottom: 16px; left: 16px; display: flex; min-height: 56px; align-items: center; justify-content: space-between; padding: 8px 8px 8px 20px; border: 1px solid var(--line); background: var(--white); }
-      .chat-label { color: var(--graphite); font-weight: 500; }
-      .chat-label span { margin-left: 8px; color: var(--pewter); font-weight: 400; }
-      .chat-bar .button { width: 180px; }
-      @media (max-width: 767px) { .nav { padding: 0 16px; } .nav-links { display: none; } h1, h2 { font-size: 28px; } .hero p { font-size: 14px; } .actions, .details, .interest-grid { width: 100%; grid-template-columns: 1fr; } .actions { flex-direction: column; } .button { width: 100%; } .section { padding: 80px 16px; } .about-copy { font-size: 16px; } .chat-label span { display: none; } .chat-bar .button { width: 150px; } }
+      @media (max-width: 767px) { .nav { padding: 0 16px; } .nav-links { display: none; } h1, h2 { font-size: 28px; } .hero p { font-size: 14px; } .actions, .details, .interest-grid { width: 100%; grid-template-columns: 1fr; } .actions { flex-direction: column; } .button { width: 100%; } .section { padding: 80px 16px; } .about-copy { font-size: 16px; } }
     </style>
   </head>
   <body>
     <nav class="nav" aria-label="주요 메뉴">
       <a class="wordmark" href="#home">지원</a>
-      <div class="nav-links"><a href="#about">소개</a><a href="#interests">좋아하는 것</a><a href="#contact">연락처</a></div>
-      <a class="nav-contact" href="tel:01046112038">연락하기</a>
+      <div class="nav-links"><a href="#about">소개</a><a href="#interests">좋아하는 것</a></div>
     </nav>
     <main>
       <section class="hero" id="home">
-        <div class="hero-content"><h1>장지원</h1><p>서울대학교 첨단융합학부<br />재학 중입니다.</p><div class="actions"><a class="button primary" href="#about">자세히 보기</a><a class="button secondary" href="tel:01046112038">연락하기</a></div></div>
+        <div class="hero-content"><h1>장지원</h1><p>서울대학교 첨단융합학부<br />재학 중입니다.</p><div class="actions"><a class="button primary" href="#about">자세히 보기</a></div></div>
       </section>
       <section class="section about" id="about"><div class="section-inner"><p class="section-kicker">about</p><h2>배우고, 만들고,<br />나만의 속도로 나아갑니다.</h2><p class="about-copy">서울대학교 첨단융합학부에서 새로운 기술과 가능성을 배우고 있습니다. 조용한 시간에는 게임을 하거나 푹 자는 것을 좋아합니다.</p><div class="details"><article class="detail"><h3>학교</h3><p>서울대학교<br />첨단융합학부 재학 중</p></article><article class="detail"><h3>지금 좋아하는 것</h3><p>좋은 게임 한 판<br />그리고 충분한 휴식</p></article></div></div></section>
       <section class="section interests" id="interests"><div class="section-inner"><p class="section-kicker">interests</p><h2>작은 즐거움</h2><div class="interest-grid"><article class="interest"><p>게임</p><span>새로운 세계를 탐험하고, 함께 플레이하는 시간</span></article><article class="interest"><p>잠</p><span>다음 날을 위한 가장 확실한 충전</span></article></div></div></section>
-      <section class="section contact-section" id="contact"><div class="section-inner"><p class="section-kicker">contact</p><h2>연락해 주세요.</h2><a class="phone" href="tel:01046112038">010-4611-2038</a></div></section>
     </main>
-    <aside class="chat-bar" aria-label="빠른 연락"><span class="chat-label">궁금한 점이 있나요?<span>전화로 바로 연락할 수 있어요.</span></span><a class="button primary" href="tel:01046112038">전화하기</a></aside>
   </body>
 </html>
