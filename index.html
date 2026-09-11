@@ -1,7 +1,44 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>안녕하세요, 제 홈페이지입니다</h1>
-<p>GitHub Pages로 만들었습니다!</p>
-</body>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="장지원의 개인 홈페이지" />
+    <title>장지원 | 개인 홈페이지</title>
+    <style>
+      :root { --ink: #1e2440; --muted: #626b89; --accent: #5753c9; --soft: #e9e8ff; --line: #dedff0; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; color: var(--ink); background: radial-gradient(circle at 10% 8%, #d9f5ee 0, transparent 28rem), radial-gradient(circle at 92% 12%, #e8e4ff 0, transparent 30rem), #f7f5f0; font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif; }
+      main { width: min(100% - 2rem, 760px); margin: 0 auto; padding: 5.5rem 0 3rem; }
+      .intro { margin-bottom: 2rem; }
+      .eyebrow { display: inline-flex; margin: 0 0 1rem; padding: .4rem .7rem; border-radius: 999px; color: #3e3a9e; background: var(--soft); font-size: .9rem; font-weight: 700; }
+      h1 { margin: 0; font-size: clamp(3rem, 11vw, 5.5rem); letter-spacing: -.075em; line-height: .98; }
+      .hello { margin: 1.25rem 0 0; color: var(--muted); font-size: clamp(1.05rem, 3vw, 1.3rem); line-height: 1.75; word-break: keep-all; }
+      .grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 1rem; }
+      .card { padding: 1.6rem; border: 1px solid var(--line); border-radius: 1.25rem; background: rgba(255, 253, 248, .82); box-shadow: 0 12px 30px rgba(48, 45, 104, .07); backdrop-filter: blur(8px); }
+      h2 { margin: 0 0 .85rem; font-size: 1.05rem; }
+      .card p, .card li { margin: 0; color: var(--muted); line-height: 1.7; word-break: keep-all; }
+      .interests { display: flex; flex-wrap: wrap; gap: .55rem; margin: 0; padding: 0; list-style: none; }
+      .interests li { padding: .45rem .75rem; border-radius: 999px; color: #3e3a9e; background: var(--soft); font-weight: 650; }
+      .contact { margin-top: 1rem; }
+      .contact a { display: inline-block; color: var(--accent); font-size: 1.1rem; font-weight: 800; text-decoration-thickness: 2px; text-underline-offset: .2em; }
+      footer { margin-top: 2rem; color: var(--muted); font-size: .85rem; text-align: center; }
+      @media (max-width: 560px) { main { padding-top: 3.5rem; } .grid { grid-template-columns: 1fr; } .card { padding: 1.35rem; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="intro">
+        <p class="eyebrow">PERSONAL HOME</p>
+        <h1>장지원</h1>
+        <p class="hello">서울대학교 첨단융합학부에 재학 중입니다.<br />게임하거나 자는 걸 좋아해요.</p>
+      </header>
+      <section class="grid" aria-label="자기소개">
+        <article class="card"><h2>학교</h2><p>서울대학교 첨단융합학부 재학 중</p></article>
+        <article class="card"><h2>좋아하는 것</h2><ul class="interests"><li>🎮 게임</li><li>😴 잠</li></ul></article>
+      </section>
+      <section class="card contact" aria-label="연락처"><h2>연락처</h2><a href="tel:01046112038">010-4611-2038</a></section>
+      <footer>© 2026 장지원. All rights reserved.</footer>
+    </main>
+  </body>
 </html>
